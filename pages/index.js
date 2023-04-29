@@ -19,7 +19,7 @@ export default function Home({ allPostsData }) {
   return (
     <Layout home>
       <Head>
-        <title>{siteTitle}</title>
+        <title>BLOG: {siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
         <p className='bg-purple-500 text-blue-400'>ALL HAIL KING OF THE LOOOOOO</p>
