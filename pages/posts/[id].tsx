@@ -1,10 +1,10 @@
-import Layout from '../../components/layout';
 import { getAllPostIds, getPostData } from '../../lib/posts';
 // Add this import
 import Head from 'next/head';
 // Add this import
-import Date from '../../components/date';
 import utilStyles from '../../styles/utils.module.css';
+import Layout from '../../components/layout';
+import Date from '../../components/date';
 
 export async function getStaticPaths() {
     const paths = getAllPostIds();
@@ -26,8 +26,7 @@ export async function getStaticProps({ params }) {
 }
 
 export default function Post({ postData }) {
-    return <Layout>
-        {/* Add this <Head> tag */}
+    return <Layout home={false}>
         <Head>
             <title>{postData.title}</title>
         </Head>
